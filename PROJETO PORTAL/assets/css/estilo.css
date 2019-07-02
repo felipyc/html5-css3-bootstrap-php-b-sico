@@ -1,0 +1,549 @@
+@charset "utf-8";
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+
+/* PARTE 1: FUNDO PRETO COM MENU A ESQUERDA E INPUT BUSCAR A DIREITA */
+
+div.topo{
+	height: 30px;
+	/*em cores hexadecimal com nome tudo igual, você pode resumir colocando só os 3 primeiros caracteres*/
+	background-color: #333333;
+}
+	div.topoint{
+		width: 100%;
+		max-width: 1040px;
+		height: 30px;
+		margin: auto;
+	}
+		div.topoleft{
+			float: left;
+			width: 50%;
+			height: 30px;
+		}
+			div#dropdown-icone{
+				display: none;
+			}
+			div.topoleft ul{
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			div.topoleft ul li{
+				float: left;
+				height: 30px;
+				margin-left: 8px;
+				margin-right: 8px;
+				line-height: 30px;
+				color: white;
+			}
+				div.topoleft ul li a{
+					color: white;
+					text-decoration: none;
+				}
+				
+				div.topoleft ul li a.ativo{
+					color: blue;
+				}
+		
+		div.toporight{
+			float: right;
+			position: relative;
+			width: 50%;
+			height: 30px;
+			margin-top: 2px;
+			text-align: right;
+		}
+		
+			div.toporight a{
+				float: right;
+				
+			}
+			
+			div.toporight a img{
+				margin-right: 3px;
+				
+			}
+			
+			input.topobusca{
+				width: 110px;
+				height: 26px;
+				outline: none;
+			}
+			.toporight input{
+				float: right;
+			}
+			
+/* PARTE entre 3 e 4: BANNER */
+	div.banner-tablet{
+		display:none;
+	}
+			
+/* PARTE 2: LOGO SITE ESQUERDA E PROPAGANDA A DIREITA */
+
+div.topo2{
+	height: 95px;
+}
+
+	div.topo2int{
+		width: 100%;
+		max-width: 1040px;
+		height: 95px;
+		margin: auto;
+	}
+			
+		div.logo{
+			float: left;
+			width: 230px;
+			height: 95px;
+			padding-top: 27.5px;
+		}
+		
+		div.banner{
+			float: right;
+			width: 650px;
+			height: 80px;
+			margin-top: 5px;
+		}
+
+/* PARTE 3: MENU DO SITE, COM FUNDO VERMELHO */
+
+div.menu{
+	height: 40px;
+	background-color: #ff0000;
+}
+	
+	div.menuint{
+		width: 100%;
+		max-width: 1040px;
+		margin: auto;
+	}
+	
+	div.menuint ul{
+		display: block;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+		div.menuint ul li{
+			float: left;
+			position: relative;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 8px;
+		}
+		
+		div.menuint ul li:hover{
+			background-color: black;
+			transition: all 1s;
+		}
+			
+			div.menuint ul li div.submenu{
+				display: none;
+				position: absolute;
+				left: 0;
+				width: 150px;
+				background-color: #ff0000;
+			}
+			
+				div.menuint ul li:hover div.submenu{
+					display: block;
+					z-index: 1;
+				}
+					div.submenu div.submenuitem{
+						height: 30px;
+						width: 150px;
+						line-height: 30px;
+						padding-left: 10px;
+					}
+					
+					div.submenu div.submenuitem:hover{
+						background-color: black;
+						transition: all 1s;
+					}
+		
+		div.menuint a{
+			color: #ffffff;
+			text-decoration: none;
+		}
+			
+/* PARTE 4: ÚLTIMAS NOTÍCIAS EM VERMELHO MAIS A NOTICIA AO LADO */
+	
+div.ultimasnoticias{
+	height: 40px;
+}	
+	div.ultimasnoticiasint{
+		width: 100%;
+		max-width: 1040px;
+		height: 40px;
+		margin: auto;
+		padding-top: 6px;
+	}
+		div.ultnoticiasarea{
+			height: 28px;
+			border: 1px solid #cccccc;
+			border-radius: 2px;
+			background-color: #ffffff;
+		}
+		
+			div.ultnoticiastitulo{
+				display: inline-block;
+				height: 26px;
+				padding: 0 10px;
+				background-color: red;
+				line-height: 27px;
+				color: #ffffff;
+				font-size: 16px;
+			}
+			
+			div.ultnoticiasnoticia{
+				display: inline-block;
+				height: 28px;
+				padding-left: 5px;
+				line-height: 28px;
+				color: #000000;
+			}
+			
+/* PARTE 5: CONTEUDO DO SITE COM TODAS AS NOTICIAS, DIVIDA EM DUAS COLUNAS */	
+
+div.containerint{
+	width: 100%;
+	max-width: 1040px;
+	margin: auto;
+}		
+	
+	/* COLUNA DA ESQUERDA */
+	div.leftside{
+		float: left;
+		width: 753px;
+	}
+		/* SLIDESHOW */
+		div.slideshow{
+			height: 335px;
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 20px;
+		}
+			
+			div.slidebolinhas{
+				position: absolute;
+				width: 200px;
+				height: 20px;
+			}
+				div.bolinha{
+					width: 20px;
+					height: 20px;
+					float: left;
+					margin-right: 5px;
+					cursor: pointer;
+					border-radius: 10px;
+					background-color: #cccccc;
+				}
+			
+			div.slideshowarea{
+				width: 10000px;
+				height: 335px;
+				transition: all 1s;
+			}
+			
+				div.slide{
+					height: 335px;
+					float: left;
+					background-repeat: none;
+					background-position: center;
+					background-size: cover;
+				}
+					div.slideinfo{
+						height: 60px;
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,1));
+					}
+						div.slideinfo_titulo{
+							font-size: 20px;
+							color: #ffffff;
+							padding-top: 10px;
+							padding-left: 20px;
+						}
+						div.slideinfo_subtitulo{
+							font-size: 13px;
+							color: #ffffff;
+							padding-left: 20px;
+						}
+				
+		/* NOTÍCIAS */
+			/* LADO ESQUERDO DE NOTICIA */
+			div.noticiaarea1{
+				float: left;
+				width: 50%;
+				height:100%;
+				padding: 5px;
+			}
+					
+				div.noticiaarea1-img{
+					
+				}
+					div.noticiaarea1-img img{
+						border: 2px solid #ffffff;
+						box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+					}
+					
+				div.noticiaarea1-titulo {
+					font-size: 16pt;
+					text-align: justify;
+				}
+			/* LADO DIREITO DE NOTICIA */
+			div.noticiaarea2{
+				float: right;
+				width: 50%;
+				height:100%;
+				padding: 5px;
+			}
+				div.noticiaitem{
+					height: 100px;
+					padding-left: 4px;
+				}
+					div.noticiaimg{
+						float: left;
+					}
+						div.noticiaimg{
+							width: 84px;
+							height: 84px;
+							border: 2px solid #ffffff;
+							box-shadow: 0px 0px 4px rgba(0,0,0,.4);
+						}
+					div.noticia_descricao{
+						float: left;
+						width: 200px;
+						padding-left: 4px;
+					}
+					
+						div.noticiatitulo{
+							text-align: justify;
+							font-size: 16px;
+						}
+						div.noticiainfo{
+							font-size: 12px;
+							color: #999999;
+							text-align: left;
+							text-align: left;
+						}
+		
+		/* ESPORTES */
+		
+	
+	/* COLUNA DA DIREITA */
+	div.rightside{
+		float: right;
+		width: 275px;
+		margin-left: 12px;
+	}
+		
+		div.widget{
+			border: 1px solid #cccccc;
+			border-radius: 2px;
+			background-color: #ffffff;
+			margin-bottom: 10px;
+		}
+			
+			div.widget_titulo{
+				height: 30px;
+				line-height: 30px;
+				padding-left: 5px;
+				font-size: 14px;
+				background-color: #f4f4f4;
+				border-bottom: 1px solid #cccccc;
+			}
+			
+			div.widget_conteudo{
+				text-align: center;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+				
+				div.noticia_item{
+					text-align: justify;
+					border-bottom: 1px solid #cccccc;
+					margin: 0 10px;
+					padding: 10px 0;
+					font-size: 13px;
+				}
+				
+					div.noticia_item a{
+						text-decoration: none;
+						color: #000000;
+					}
+			
+/* MEDIA QUERIES */
+	@media only screen and (min-width: 1058px){
+		ul#menu {
+			display: block !important;
+		}
+	}
+	
+	@media only screen and (min-width: 904px) and (max-width: 1057px){
+		div.topoint, div.topo2int, div.menuint, div.ultimasnoticiasint, div.containerint{
+			max-width: 890px;
+		}
+		
+		ul#menu {
+			display: block !important;
+		}
+		
+		div.leftside{
+			max-width: 600px;
+		}
+	}
+	
+	@media only screen and (min-width: 768px) and (max-width: 903px){
+		div.topoint, div.topo2int, div.menuint, div.ultimasnoticiasint, div.containerint{
+			max-width: 768px;
+		}
+		div.topo2int div.logo{
+			float: none;
+			margin: auto;
+		}
+		div.topo2int div.banner{
+			display: none;
+		}
+		ul#menu {
+			display: block !important;
+		}
+		
+		div.banner-tablet{
+			display: block;
+			max-width: 768px;
+			margin: 10px auto 0 auto;
+		}
+		div.leftside{
+			float: none;
+			width: 100%;
+		}
+		div.rightside{
+			display: none;
+		}
+	}
+			
+	@media only screen and (max-width: 767px) {
+		div.topoint, div.topo2int, div.menuint, div.ultimasnoticiasint, div.containerint{
+			width: 320px;
+		}
+		
+		div.topoleft{
+			display: none;
+		}
+		div.toporight{
+			float: none;
+			position: relative;
+			width: 320px;
+			height: 30px;
+			margin: 0;
+			padding-top: 2px;
+		}
+		
+		div.topo2int div.logo{
+			float: none;
+			margin: auto;
+		}
+		div.topo2int div.banner{
+			display: none;
+		}
+		
+		div#dropdown-icone{
+			display: block;
+			text-align: center;	
+		}
+		
+		div.menuint ul{
+			position: absolute;
+			background-color: #ff0000;
+			width: 320px;
+			display: none;
+		}
+			div.menuint ul li{
+				float: none;
+				text-align: center;
+				height: auto;
+			}
+				div.menuint ul li div.submenu{
+					display: block;
+					position: static;
+					width: 100%;
+				}
+					div.submenu div.submenuitem{
+						height: 30px;
+						width: 100%;
+						line-height: 30px;
+						padding-left: 10px;
+						background-color: black;
+					}
+				
+		
+		div.banner-tablet{
+			display: block;
+			width: 320px;
+			margin: 10px auto 10px auto;
+		}
+		
+		div.ultimasnoticias{
+			display: none;
+		}
+		
+		div.leftside{
+			float: none;
+			width: 100%;
+		}
+			div.slideshow{
+				display: none;
+			}
+			
+			div.noticiaarea1{
+				float: none;
+				width: 100%;
+				height:100%;
+				padding: 5px;
+			}
+			
+			div.noticiaarea2{
+				float: none;
+				width: 100%;
+				height:100%;
+				padding: 5px;
+			}
+		div.rightside{
+			display: none;
+		}
+			
+	} 
+			
+			
+		
+
+
+
+
+
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	

@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="refresh" content=""/>
+		<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
+		<title>Portal</title>
+		<link rel="stylesheet" href="assets/css/estilo.css" />
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<!-- PARTE 1: FUNDO PRETO COM MENU A ESQUERDA E INPUT BUSCAR A DIREITA -->
+		<div class="topo">
+			<div class="topoint">
+				<div class="topoleft">
+					<ul>
+						<li><a href="./" class="ativo">Home</a></li>
+						<li><a href="quem-somos">Quem somos</a></li>
+						<li><a href="anuncie-aqui">Anuncie aqui</a></li>
+						<li><a href="contato">Contato</a></li>
+					</ul>
+				</div>
+				<div class="toporight">
+					<!-- INPUT float:left INVERTE A ORDEM DO CONTEUDO, NO SITE ESTÁ AO CONTRÁRIO -->
+					<input type="image" src="assets/images/lupa.png" alt="submit" name="" id="" size="" maxlenght="" style="width:26px;height:26px;">
+					<input type="search" name="busca" class="topobusca" placeholder="Buscar..." size="" maxlenght="">
+					<a href=""><img src="assets/images/youtube.png" alt="" style="width:26px;height:26px;"></a>
+					<a href=""><img src="assets/images/twitter.png" alt="" style="width:26px;height:26px;"></a>
+					<a href=""><img src="assets/images/facebook.png" alt="" style="width:26px;height:26px;"></a>
+					<a href=""><img src="assets/images/google_plus.png" alt="" style="width:26px;height:26px;"></a>
+					<a href="css/quem-somos"><img src="assets/images/rss.png" alt="" style="width:26px;height:26px;"></a>
+				</div>
+			</div>
+		</div>
+		<!-- PARTE 2: LOGO SITE ESQUERDA E PROPAGANDA A DIREITA -->
+		<div class="topo2">
+			<div class="topo2int">
+				<div class="logo">
+					<img src="assets/images/mega_portal.jpg" alt="logo site" style="width:230px;height:40px;">
+				</div>
+				<div class="banner">
+					<img src="assets/images/banner_carnaval.gif" alt="banner a esquerda da logo" style="width:650px;height:80px;">
+				</div>
+			</div>
+		</div>
+		<!-- PARTE 3: MENU DO SITE, COM FUNDO VERMELHO -->
+		<div class="menu">
+			<div class="menuint">
+				<div id="dropdown-icone">
+					<img src="assets/images/dropdown-icon.png" alt="" title="dropdown-icon" style="width:35px;height:35px;" onclick="toggleMenu()">
+				</div>
+				<ul id="menu">
+					<li><a href="" class="ativo">Home</a></li>
+					<li><a href="">Economia</a></li>
+					<li>
+						<a href="">Entretenimento</a>
+						<img src="assets/images/parte3_drop-down-arrow.png" alt="ícone não clicável" style="width: 10px;height: 10px;">
+						<div class="submenu">
+							
+							<a href="">
+								<div class="submenuitem">Moda</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Novelas</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Superinteressante</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Comida</div>
+							</a>
+							
+							<!--
+								OUTRA FORMA DE FAZER SUBMENU
+								<ul>
+								<li><a href="">Moda</a>
+								<li><a href="">Novelas</a>
+								<li><a href="">Superinteressante</a>
+								<li><a href="">Comida</a>
+								</ul>
+							-->
+						</div>
+					</li>
+					<li>
+						<a href="">Esportes</a>
+						<img src="assets/images/parte3_drop-down-arrow.png" alt="ícone não clicável" style="width: 10px;height: 10px;">
+						<div class="submenu">
+							<a href="">
+								<div class="submenuitem">Moda</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Novelas</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Superinteressante</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Comida</div>
+							</a>
+						</div>
+					</li>
+					<li><a href="">Geral</a></li>
+					<li>
+						<a href="">Notícias</a>
+						<img src="assets/images/parte3_drop-down-arrow.png" alt="ícone não clicável" style="width: 10px;height: 10px;">
+						<div class="submenu">
+							<a href="">
+								<div class="submenuitem">Moda</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Novelas</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Superinteressante</div>
+							</a>
+							<a href="">
+								<div class="submenuitem">Comida</div>
+							</a>
+						</div>
+					</li>
+					<li><a href="">Política</a></li>
+					<li><a href="">Videos</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- PARTE entre 3 e 4: BANNER -->
+		
+		<div class="banner-tablet">
+			<img src="assets/images/banner_carnaval.gif" alt="banner a esquerda da logo" style="width:100%;height:80px;">
+		</div>
+		
+		<!-- PARTE 4: ÚLTIMAS NOTÍCIAS EM VERMELHO MAIS A NOTICIA AO LADO -->
+		<div class="ultimasnoticias">
+			<div class="ultimasnoticiasint">
+				<div class="ultnoticiasarea">
+					<div class="ultnoticiastitulo">
+						ÚLTIMAS NOTÍCIAS
+					</div>
+					<div class="ultnoticiasnoticia">
+						Criador da internet teme a perda de todas as nossas memórias  digitais no futuro.
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PARTE 5: CONTEUDO DO SITE COM TODAS AS NOTICIAS, DIVIDA EM DUAS COLUNAS -->
+		<div class="container">
+			<div class="containerint">
+				<!-- COLUNA ESQUERDA -->
+				<div class="leftside">
+					<!-- SLIDESHOW -->
+					<div class="slideshow" id="slideshow">
+						<div class="slidebolinhas">
+							<div class="bolinha" onclick="mudarSlide(0)"></div>
+							<div class="bolinha" onclick="mudarSlide(1)"></div>
+							<div class="bolinha" onclick="mudarSlide(2)"></div>
+							<div class="bolinha" onclick="mudarSlide(3)"></div>
+						</div>
+						<div class="slideshowarea">
+							<a href=>
+								<div class="slide" style="background-image: url('assets/images/slideshow.png');">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Titulo de teste 1</div>
+										<div class="slideinfo_subtitulo">Subtitulo de teste 1</div>
+									</div>
+								</div>
+							</a>
+							<a href=>
+								<div class="slide" style="background-image: url('assets/images/slideshow.png');">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Titulo de teste 2</div>
+										<div class="slideinfo_subtitulo">Subtitulo de teste 2</div>
+									</div>
+								</div>
+							</a>
+							<a href=>
+								<div class="slide" style="background-image: url('assets/images/slideshow.png');">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Titulo de teste 3</div>
+										<div class="slideinfo_subtitulo">Subtitulo de teste 3</div>
+									</div>
+								</div>
+							</a>
+							<a href=>
+								<div class="slide" style="background-image: url('assets/images/slideshow.png');">
+									<div class="slideinfo">
+										<div class="slideinfo_titulo">Titulo de teste 4</div>
+										<div class="slideinfo_subtitulo">Subtitulo de teste 4</div>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- NOTICIAS -->
+					<div class="widget">
+						<div class="widget_titulo">NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<!-- LADO ESQUERDO DE NOTICIA -->
+							<div class="noticiaarea1">								
+								<div class="noticiaarea1-img">
+									<img src="assets/images/quadrilha.jpg" alt="" style="width: 100%;height: 100%;">
+								</div>
+								<div class="noticiaarea1-titulo">
+									<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+								</div>
+								<div class="noticiainfo">
+									5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+								</div>
+							</div>
+							<!-- LADO DIREITO DE NOTICIA -->
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/jogo.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+								
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/morena.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">"Pessoas como ela são alicerces para que o melhor da moda não morra"</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+								
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/vintCerf.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">Criador da internet teme a perda de todas as nossas memórias digitais no futuro</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						<!-- gambiarra -->
+						<div style="clear: both;"></div>
+					</div>
+					
+					<!-- ESPORTES -->
+					<div class="widget">
+						<div class="widget_titulo">ESPORTES</div>
+						<div class="widget_conteudo">
+							<!-- LADO ESQUERDO DE NOTICIA -->
+							<div class="noticiaarea1">								
+								<div class="noticiaarea1-img">
+									<img src="assets/images/quadrilha.jpg" alt="" style="width: 100%;height: 100%;">
+								</div>
+								<div class="noticiaarea1-titulo">
+									<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+								</div>
+								<div class="noticiainfo">
+									5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+								</div>
+							</div>
+							<!-- LADO DIREITO DE NOTICIA -->
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/jogo.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+								
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/morena.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">"Pessoas como ela são alicerces para que o melhor da moda não morra"</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+								
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/vintCerf.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">Criador da internet teme a perda de todas as nossas memórias digitais no futuro</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						<!-- gambiarra -->
+						<div style="clear: both;"></div>
+					</div>
+					
+					<!-- MODA -->
+					<div class="widget">
+						<div class="widget_titulo">MODA</div>
+						<div class="widget_conteudo">
+							<!-- LADO ESQUERDO DE NOTICIA -->
+							<div class="noticiaarea1">								
+								<div class="noticiaarea1-img">
+									<img src="assets/images/quadrilha.jpg" alt="" style="width: 100%;height: 100%;">
+								</div>
+								<div class="noticiaarea1-titulo">
+									<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+								</div>
+								<div class="noticiainfo">
+									5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+								</div>
+							</div>
+							<!-- LADO DIREITO DE NOTICIA -->
+							<div class="noticiaarea2">
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/jogo.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+								
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/morena.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">"Pessoas como ela são alicerces para que o melhor da moda não morra"</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+								
+								<div class="noticiaitem">
+									<div class="noticiaimg">
+										<img src="assets/images/vintCerf.jpg" alt="" style="width:80px;height:80px;">
+									</div>
+									<div class="noticia_descricao">
+										<div class="noticiatitulo">
+											<a href="">Criador da internet teme a perda de todas as nossas memórias digitais no futuro</a>
+										</div>
+										<div class="noticiainfo">
+											5 dias atras &nbsp;&nbsp;&nbsp;Deixe um comentario
+										</div>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+						<!-- gambiarra -->
+						<div style="clear: both;"></div>
+					</div>
+					
+				</div>
+				
+				<!-- COLUNA DIREITA -->
+				<div class="rightside">
+					<div class="widget">
+						<div class="widget_titulo">SOCIAL</div>
+						<div class="widget_conteudo">
+							<a href=""><img src="assets/images/rss.png" alt="" style="width:20px;height:20px;"></a>
+							<a href=""><img src="assets/images/google_plus.png" alt="" style="width:20px;height:20px;"></a>
+							<a href=""><img src="assets/images/facebook.png" alt="" style="width:20px;height:20px;"></a>
+							<a href=""><img src="assets/images/twitter.png" alt="" style="width:20px;height:20px;"></a>
+							<a href=""><img src="assets/images/youtube.png" alt="" style="width:20px;height:20px;"></a>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ÚLTIMAS NOTÍCIAS</div>
+						<div class="widget_conteudo">
+							<div class="noticia_item">
+								<a href="">Polícia Militar prende quadrilha com drogas e metralhadora na zona norte de Teresina</a>
+							</div>
+							<div class="noticia_item">
+								<a href="">Em retorno ao Mineirão, Cruzeiro empata por 1x1 com Caldense no campeonato Mineiro</a>
+							</div>
+							<div class="noticia_item">
+								<a href="">"Pessoas como ela são alicerces para que o melhor da moda não morra"</a>
+							</div>
+							<div class="noticia_item">
+								<a href="">Criador da internet teme a perda de todas as nossas memórias digitais no futuro</a>
+							</div>
+							<div class="noticia_item">
+								<a href="">Barack Obama é flagrado tirando foto com "pau de selfie"</a>
+							</div>
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">PUBLICIDADE</div>
+						<div class="widget_conteudo">
+							<img src="assets/images/publicidade.png" alt="imagem propaganda" style="width:100%;height:auto;">
+						</div>
+					</div>
+					<div class="widget">
+						<div class="widget_titulo">ENCONTRE-NOS NO FACEBOOK</div>
+						<div class="widget_conteudo">
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=273&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- PARTE 6: RODAPE -->
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

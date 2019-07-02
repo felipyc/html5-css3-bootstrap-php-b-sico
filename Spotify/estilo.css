@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*
+    Author: Felipy C.
+    Version: 
+*/
+
+/*
+    PARTE 1: BARRA DE NAVEGAÇÃO 
+    PARTE 2: MUSICA PARA TODOS mais media query.
+    PARTE 3: O QUE O SPOTIFY TEM 
+    PARTE 4: FÁCIL,BUSCAR,NAVEGAR,DESCOBRIR 
+    PARTE 5: RODAPÉ 
+*/
+
+/* ====================================  LAYOUT =================================================== */
+
+html,body{
+    height: 100%;
+    overflow:auto;  
+}
+
+body{
+    background-image: url('imagens/capa.png'), url('imagens/ruido.png'), linear-gradient(50deg,#ff4269,#7c26f8);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* PARTE 1: BARRA DE NAVEGAÇÃO */
+nav.navbar-transparente{
+    padding: 15px 0px;
+    background-color:rgba(0,0,0,0.6);
+    border: none;
+}
+    /* LADO ESQUERDO DO MENU COM EXCEÇÃO BUTTON TOGGLE */
+    .navbar-brand{
+        padding : 5px 15px; 
+    }
+        .img-logo{
+            height: 40px;
+            width: 132px;
+            display: block;
+            background-image: url('imagens/spotify.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: transparent;
+        }
+    /* LADO DIREITO DO MENU */
+    .divisor{
+        width: 1px;
+        height: 16px;
+        margin: 16px 10px;
+        background-color: white;
+    }
+    .navbar-inverse .navbar-nav>li>a{
+        color:  white;  
+    }
+        .navbar-inverse .navbar-nav>li>a:hover{
+            color: #9bf0e1;  
+        }
+
+/* PARTE 2: MUSICA PARA TODOS */
+.capa{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+    .texto-capa{
+        text-align: center;
+        color: white;       
+    }
+        .texto-capa > h1{
+            font-size: 100px;
+            font-weight: 900;
+            letter-spacing: -0.05em;
+            margin-bottom: 50px;
+        }
+    .texto-capa .btn-custom{
+        color: white;   
+        border-radius: 500px; 
+        padding: 10px 35px;
+        text-transform: uppercase;
+        margin: 10px 15px;
+    }
+        .texto-capa .btn-roxo{
+            background-color: #7c25f8;
+            transition: all 1s;
+        }
+            .texto-capa .btn-roxo:hover{
+                background-color: #6207e3;
+            }
+        .texto-capa .btn-branco{
+            background-color: rgba(0,0,0,0);
+            border: 2px solid white;
+            transition: all 1s;
+        }
+            .texto-capa .btn-branco:hover{
+                background-color: white;
+                color: black;
+            }
+
+@media screen and (min-width: 768px){
+    .texto-capa > h1{
+        font-size: 70px;
+    }
+}
+@media screen and (min-width: 992px){
+    .texto-capa > h1{
+        font-size: 80px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .texto-capa > h1{
+        font-size: 100px;
+    }
+}
+
+    
+/* PARTE 3: O QUE O SPOTIFY TEM */
+#servicos{
+    background-color: white;
+    padding: 20px 0;
+}
+    .albuns{
+        padding: 10px 0;
+    }
+
+    .servicos-right > h2{
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -0.0.4em;   
+        color: #7c25f8;
+    }
+        .servicos-right > h3{
+            font-size: 35px;
+            font-weight: 700;
+            letter-spacing: -0.0.4em;
+            color: #7c25f8;
+        }
+        .servicos-right > p {
+            display: block;
+        }
+
+    /*
+    do meu jeito
+    .conteudo-left{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+        .conteudo-left-img{
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+        .conteudo-left-img img{
+            width: 250px;
+            height: 250px;  
+        }
+    .conteudo-right{
+        width: 50%;
+        background-color: red;
+        height: 100%;   
+    }
+    */
+
+/* PARTE 4: FÁCIL,BUSCAR,NAVEGAR,DESCOBRIR */
+#recursos{
+    padding: 20px 0;
+}
+    .recursos-left > h2{
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -0.0.4em;   
+        color: white;
+    }
+        .recursos-left > h3{
+            font-size: 35px;
+            font-weight: 700;
+            letter-spacing: -0.0.4em;
+            color: #9bf0e1;
+        }
+        .recursos-left > p {
+            color: white;
+        }
+    .rotacionar{
+        transform: rotate(25deg);
+        padding-left: 80px;
+    }
+
+/* PARTE 5: RODAPÉ */
+footer#rodape{
+    position: relative;
+    background-color: #000000;
+    padding: 50px 0 20px 0;
+}
+    footer#rodape h4{
+        color: #919496;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+    footer#rodape .nav a{
+        color: white;
+    }
+        footer#rodape ul.nav li:hover a{
+            color: #9bf0e1;
+            background-color: rgba(0,0,0,0);
+        }
+    .item-rede-social{
+        float: right;
+    }
